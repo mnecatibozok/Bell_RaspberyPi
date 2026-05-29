@@ -1,0 +1,7 @@
+# Zil Sistemi — AI bağımlılıkları
+# Pi'ye kurmak için:
+#   pip install -r requirements_ai.txt --break-system-packages
+
+ultralytics>=8.2.0
+pillow>=10.0.0
+lgpio>=0.2.0.0           # Pi 5 GPIO desteği (RPi.GPIO çalışmazsa kullanılır)
