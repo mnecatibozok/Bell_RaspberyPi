@@ -1,0 +1,12 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Zil Sistemi
+Name[en]=Bell System
+Comment=Okul Zil Sistemini Başlat
+Comment[en]=Start School Bell System
+Exec=bash /home/abc/Desktop/zil/zil-baslat.sh
+Icon=/home/abc/Desktop/zil/zil-icon.png
+Terminal=false
+Categories=Education;
+StartupNotify=true

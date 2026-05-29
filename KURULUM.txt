@@ -1,0 +1,32 @@
+════════════════════════════════════════════
+  ZİL SİSTEMİ — KURULUM TALİMATI
+  Raspberry Pi (Kullanıcı: abc)
+════════════════════════════════════════════
+
+1. ZIP DOSYASINI ÇIKART
+   Masaüstüne çıkart → /home/abc/Desktop/zil/
+
+2. YOLOv8 AI KURULUMU (ilk kurulumda bir kez)
+   Terminal aç:
+   cd /home/abc/Desktop/zil
+   bash zunucu/ai_kur.sh
+
+3. SİSTEMİ BAŞLAT
+   a) Çift tıklayarak: "Zil-Baslat.desktop" dosyasına çift tıkla
+   b) Veya terminal ile:
+      bash /home/abc/Desktop/zil/zil-baslat.sh
+
+4. OTOMATİK BAŞLATMA KURULUMU (Pi her açıldığında otomatik çalışsın)
+   Terminal:
+   mkdir -p /home/abc/.config/autostart
+   cp /home/abc/Desktop/zil/zil-autostart.desktop \
+      /home/abc/.config/autostart/zil.desktop
+
+5. SİSTEMİ DURDUR
+   pkill -f sunucu.py
+
+════════════════════════════════════════════
+  SUNUCU LOGUNDA BEKLENEN ÇIKTI:
+  [AI] YOLOv8-nano hazır ✓     ← AI aktif
+  [KAM] Kamera hazır: 640×480  ← Kamera bağlı
+════════════════════════════════════════════

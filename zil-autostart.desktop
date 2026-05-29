@@ -1,0 +1,8 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Zil Sistemi
+Exec=bash /home/abc/Desktop/zil/zil-baslat.sh
+Terminal=false
+Hidden=false
+X-GNOME-Autostart-enabled=true

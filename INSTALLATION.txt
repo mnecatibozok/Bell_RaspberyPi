@@ -1,0 +1,32 @@
+════════════════════════════════════════════
+  BELL SYSTEM — INSTALLATION GUIDE
+  Raspberry Pi (User: abc)
+════════════════════════════════════════════
+
+1. EXTRACT THE ZIP FILE
+   Extract to Desktop → /home/abc/Desktop/zil/
+
+2. YOLOv8 AI SETUP (only once, on first install)
+   Open a terminal:
+   cd /home/abc/Desktop/zil
+   bash zunucu/ai_kur.sh
+
+3. START THE SYSTEM
+   a) Double-click: double-click the "Zil-Baslat.desktop" file
+   b) Or via terminal:
+      bash /home/abc/Desktop/zil/bell-start.sh
+
+4. AUTO-START SETUP (run automatically every time Pi boots)
+   Terminal:
+   mkdir -p /home/abc/.config/autostart
+   cp /home/abc/Desktop/zil/zil-autostart.desktop \
+      /home/abc/.config/autostart/zil.desktop
+
+5. STOP THE SYSTEM
+   pkill -f sunucu.py
+
+════════════════════════════════════════════
+  EXPECTED SERVER LOG OUTPUT:
+  [AI] YOLOv8-nano hazır ✓     ← AI active
+  [KAM] Kamera hazır: 640×480  ← Camera connected
+════════════════════════════════════════════
